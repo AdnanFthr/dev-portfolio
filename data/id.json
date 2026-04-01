@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "home": "Beranda",
+        "about": "Tentang",
+        "skills": "Keahlian",
+        "experience": "Pengalaman",
+        "projects": "Proyek",
+        "contact": "Kontak"
+    },
+    "hero": {
+        "greeting": "halo, saya Adnan Fathurizky",
+        "description": "Fresh Graduate IT dari President University yang memulai karir development pada 2025. Fokus membangun solusi digital dengan kode yang bersih dan efisien.",
+        "cta": {
+            "projects": "Lihat Proyek",
+            "contact": "Hubungi Saya"
+        },
+        "scroll": "Scroll ke bawah"
+    },
+    "typing": [
+        "Full-stack Developer",
+        "Backend Developer",
+        "Web Developer"
+    ],
+    "about": {
+        "tag": "Tentang Saya",
+        "title": "Perjalanan Saya",
+        "subtitle": "Fresh Graduate IT dengan Passion dalam Development",
+        "p1": "Saya adalah lulusan <strong>Teknik Informatika dari President University</strong> (Batch 2021-2024) yang memulai karir sebagai developer pada tahun 2025. Meskipun masih baru di industri, saya memiliki tekad kuat untuk terus belajar dan berkembang.",
+        "p2": "Saat ini saya sedang mengembangkan <strong>OrderApps SAS</strong> di <strong>PT. Sinergi Anugrah Services</strong>, sebuah aplikasi order management system yang menantang dan memberikan pengalaman berharga dalam pengembangan software enterprise.",
+        "timeline": {
+            "1": { "title": "Mulai Kuliah", "desc": "Memulai studi di President University, Batch 2021" },
+            "2": { "title": "Lulus", "desc": "Menyelesaikan studi Teknik Informatika" },
+            "3": { "title": "Start Development", "desc": "Memulai karir sebagai developer" }
+        }
+    },
+    "skills": {
+        "tag": "Keahlian",
+        "title": "Tech Stack Saya"
+    },
+    "exp": {
+        "tag": "Pengalaman",
+        "title": "Karir Development",
+        "current": "Current Role",
+        "role": "Backend Developer",
+        "now": "Sekarang",
+        "desc": "Sedang mengembangkan <strong>OrderApps SAS</strong>, sebuah aplikasi order management system yang digunakan untuk mengelola proses order barang dan list inventory, yang akan berkembang menjadi sebuah system ERP untuk perusahaan. Meliputi berbagai fitur:",
+        "feature": {
+            "1": "Develop backend menggunakan PHP & Database management dengan MySQL",
+            "2": "Integrasi frontend dengan HTML, CSS, JavaScript",
+            "3": "Fitur CRUD (Create, Read, Update, Delete), Approver, Generate PO, Generate PDF",
+            "4": "Optimasi performa aplikasi"
+        }
+    },
+    "projects": {
+        "tag": "Portofolio",
+        "title": "Proyek Saat Ini",
+        "intro": "Sebagai developer yang baru memulai karir pada 2025, saya fokus pada pengembangan <strong>OrderApps SAS</strong>. Proyek ini menjadi pengalaman pertama saya dalam mengembangkan aplikasi enterprise-level.",
+        "status": "In Development",
+        "coming": "Coming Soon",
+        "type": "Enterprise Application",
+        "desc": "Aplikasi order management system untuk PT. Sinergi Anugrah Services. Sistem sebuah aplikasi yang digunakan untuk mengelola proses order barang dan list inventory, yang akan berkembang menjadi sebuah system ERP untuk perusahaan.",
+        "developing": "Sedang Dikembangkan"
+    },
+    "contact": {
+        "tag": "Kontak",
+        "title": "Mari Berkolaborasi",
+        "email": "Email",
+        "location": "Lokasi",
+        "country": "Indonesia",
+        "education": "Pendidikan",
+        "major": "Teknik Informatika"
+    },
+    "form": {
+        "name": "Nama",
+        "email": "Email",
+        "message": "Pesan",
+        "send": "Kirim Pesan"
+    },
+    "footer": {
+        "made": "Dibuat dengan",
+        "coffee": "dan banyak kopi"
+    }
+}

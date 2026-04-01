@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id" data-lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Portfolio Programmer - Web Developer & Software Engineer">
+    <meta name="keywords" content="web developer, programmer, portfolio, PHP, JavaScript, Full-stack">
+    <meta name="author" content="Adnan Fathurizky">
+    <meta name="theme-color" content="#6366f1">
+    
+    <meta property="og:title" content="Adnan Fathurizky | Full-stack Developer">
+    <meta property="og:description" content="Fresh Graduate IT membangun aplikasi web skala penuh">
+    <meta property="og:type" content="website">
+    
+    <title>Adnan Fathurizky | Membangun Aplikasi Web Skala Penuh</title>
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" aria-label="Home">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Samoonier Dev</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <div class="nav-right">
+                <div class="lang-switcher" id="langSwitcher">
+                    <button class="lang-btn active" data-lang="id">
+                        <span class="lang-text">ID</span>
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <span class="lang-text">EN</span>
+                    </button>
+                </div>
+
+                <ul class="nav-menu" id="navMenu" role="menubar">
+                    <li><a href="#home" class="nav-link active" data-i18n="nav.home">Beranda</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Keahlian</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Pengalaman</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proyek</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontak</a></li>
+                </ul>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting" data-i18n="hero.greeting">halo, saya Adnan Fathurizky</p>
+                <h1 class="hero-title">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <p class="hero-description" data-i18n="hero.description">
+                    Fresh Graduate IT dari President University yang memulai karir development 
+                    pada 2025. Fokus membangun solusi digital dengan kode yang bersih dan efisien.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> 
+                        <span data-i18n="hero.cta.projects">Lihat Proyek</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> 
+                        <span data-i18n="hero.cta.contact">Hubungi Saya</span>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.instagram.com/nan.fthr_" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://id.linkedin.com/in/adnanfthr" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:adnanfthr@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="window-title">developer.js</span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code>
+<span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+    <span class="code-property">nama</span>: <span class="code-string">"Samoonier"</span>,
+    <span class="code-property">role</span>: <span class="code-string">"Full-stack Developer"</span>,
+    <span class="code-property">startDev</span>: <span class="code-number">2025</span>,
+    <span class="code-property">education</span>: <span class="code-string">"IT - President University"</span>,
+    <span class="code-property">batch</span>: <span class="code-string">"2021-2024"</span>,
+    <span class="code-property">current</span>: <span class="code-string">"OrderApps SAS"</span>,
+    <span class="code-property">coffee</span>: <span class="code-boolean">true</span>
+};
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="mouse"><span class="wheel"></span></span>
+            <p data-i18n="hero.scroll">Scroll ke bawah</p>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-tag" data-i18n="about.tag">Tentang Saya</span>
+                <h2 class="section-title" data-i18n="about.title">Perjalanan Saya</h2>
+            </header>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-bg"></div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3 data-i18n="about.subtitle">Fresh Graduate IT dengan Passion dalam Development</h3>
+                    <p data-i18n="about.p1">
+                        Saya adalah lulusan <strong>Teknik Informatika dari President University</strong> 
+                        (Batch 2021-2024) yang memulai karir sebagai developer pada tahun 2025. 
+                        Meskipun masih baru di industri, saya memiliki tekad kuat untuk terus belajar 
+                        dan berkembang.
+                    </p>
+                    <p data-i18n="about.p2">
+                        Saat ini saya sedang mengembangkan <strong>OrderApps SAS</strong> di 
+                        <strong>PT. Sinergi Anugrah Services</strong>, sebuah aplikasi order 
+                        management system yang menantang dan memberikan pengalaman berharga 
+                        dalam pengembangan software enterprise.
+                    </p>
+                    
+                    <div class="about-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2021</span>
+                                <h4 data-i18n="about.timeline.1.title">Mulai Kuliah</h4>
+                                <p data-i18n="about.timeline.1.desc">Memulai studi di President University, Batch 2021</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2024</span>
+                                <h4 data-i18n="about.timeline.2.title">Lulus</h4>
+                                <p data-i18n="about.timeline.2.desc">Menyelesaikan studi Teknik Informatika</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item active">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2025</span>
+                                <h4 data-i18n="about.timeline.3.title">Start Development</h4>
+                                <p data-i18n="about.timeline.3.desc">Memulai karir sebagai developer & develop OrderApps SAS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills section">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-tag" data-i18n="skills.tag">Keahlian</span>
+                <h2 class="section-title" data-i18n="skills.title">Tech Stack Saya</h2>
+            </header>
+            
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-code"></i> Core Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item modern-card" title="PHP">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item modern-card" title="JavaScript">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item modern-card" title="MySQL">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item modern-card" title="HTML5 & CSS3">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience section">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-tag" data-i18n="exp.tag">Pengalaman</span>
+                <h2 class="section-title" data-i18n="exp.title">Karir Development</h2>
+            </header>
+            
+            <div class="experience-content">
+                <article class="current-role">
+                    <div class="role-badge" data-i18n="exp.current">Current Role</div>
+                    <h3 data-i18n="exp.role">Backend Developer</h3>
+                    <p class="company">PT. Sinergi Anugrah Services</p>
+                    <p class="period">2025 - <span data-i18n="exp.now">Sekarang</span></p>
+                    
+                    <div class="role-description">
+                        <p data-i18n="exp.desc">
+                            Sedang mengembangkan <strong>OrderApps SAS</strong>, sebuah aplikasi 
+                            order management system yang digunakan untuk mengelola proses order barang dan list inventory, 
+                            yang akan berkembang menjadi sebuah system ERP untuk perusahaan.
+                            Meliputi berbagai fitur:
+                        </p>
+                        <ul>
+                            <li data-i18n="exp.feature.1">Develop backend menggunakan PHP & Database management dengan MySQL</li>
+                            <li data-i18n="exp.feature.2">Integrasi frontend dengan HTML, CSS, JavaScript</li>
+                            <li data-i18n="exp.feature.3">Fitur CRUD (Create, Read, Update, Delete), Approver, Generate PO, Generate PDF</li>
+                            <li data-i18n="exp.feature.4">Optimasi performa di browser desktop dan smartphone</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-tag" data-i18n="projects.tag">Portofolio</span>
+                <h2 class="section-title" data-i18n="projects.title">Proyek Saat Ini</h2>
+            </header>
+            
+            <p class="projects-intro" data-i18n="projects.intro">
+                Sebagai developer yang baru memulai karir pada 2025, saya fokus pada 
+                pengembangan <strong>OrderApps SAS</strong>. Proyek ini menjadi pengalaman 
+                pertama saya dalam mengembangkan aplikasi enterprise-level.
+            </p>
+            
+            <div class="projects-grid single-project">
+                <article class="project-card featured-project">
+                    <div class="project-badge" data-i18n="projects.status">In Development</div>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <span class="coming-soon" data-i18n="projects.coming">Coming Soon</span>
+                        </div>
+                        <div class="project-placeholder order-apps">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>OrderApps SAS</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag" data-i18n="projects.type">Enterprise Application</span>
+                        <h3>OrderApps SAS</h3>
+                        <p data-i18n="projects.desc">
+                            Aplikasi order management system untuk PT. Sinergi Anugrah Services. 
+                            Sistem sebuah aplikasi yang digunakan untuk mengelola proses order barang dan list inventory, 
+                            yang akan berkembang menjadi sebuah system ERP untuk perusahaan.
+                        </p>
+                        <div class="project-tech">
+                            <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-dot"></span>
+                            <span data-i18n="projects.developing">Sedang Dikembangkan</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-tag" data-i18n="contact.tag">Kontak</span>
+                <h2 class="section-title" data-i18n="contact.title">Mari Berkolaborasi</h2>
+            </header>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-detail">
+                            <h4 data-i18n="contact.email">Email</h4>
+                            <p><a href="mailto:adnanfthr@gmail.com">adnanfthr@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-detail">
+                            <h4 data-i18n="contact.location">Lokasi</h4>
+                            <p data-i18n="contact.country">Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="contact-detail">
+                            <h4 data-i18n="contact.education">Pendidikan</h4>
+                            <p>President University (2021-2024)</p>
+                            <small data-i18n="contact.major">Teknik Informatika</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name" data-i18n="form.name">Nama</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email" data-i18n="form.email">Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message" data-i18n="form.message">Pesan</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> 
+                        <span data-i18n="form.send">Kirim Pesan</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">Samoonier Dev</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Samoonier | Dev since 2025</p>
+                </div>
+                
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/nan.fthr_" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://id.linkedin.com/in/adnanfthr" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:adnanfthr@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy;2025 Adnan Fathurizky.
+                    <span data-i18n="footer.made">Dibuat dengan</span> 
+                    <i class="fas fa-heart"></i> 
+                    <span data-i18n="footer.coffee">dan banyak kopi</span>.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/i18n.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

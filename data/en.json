@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "hi, I'm Adnan Fathurizky",
+        "description": "Fresh Graduate in IT from President University who started development career in 2025. Focused on building digital solutions with clean and efficient code.",
+        "cta": {
+            "projects": "View Projects",
+            "contact": "Contact Me"
+        },
+        "scroll": "Scroll down"
+    },
+    "typing": [
+        "Full-stack Developer",
+        "Backend Developer",
+        "Web Developer"
+    ],
+    "about": {
+        "tag": "About Me",
+        "title": "My Journey",
+        "subtitle": "Fresh Graduate IT with Passion in Development",
+        "p1": "I am a graduate of <strong>Information Technology from President University</strong> (Batch 2021-2024) who started my career as a developer in 2025. Although new to the industry, I have a strong determination to keep learning and growing.",
+        "p2": "Currently, I am developing <strong>OrderApps SAS</strong> at <strong>PT. Sinergi Anugrah Services</strong>, an order management system application that is challenging and provides valuable experience in enterprise software development.",
+        "timeline": {
+            "1": { "title": "Started College", "desc": "Began studies at President University, Batch 2021" },
+            "2": { "title": "Graduated", "desc": "Completed Information Technology degree" },
+            "3": { "title": "Start Development", "desc": "Started career as developer" }
+        }
+    },
+    "skills": {
+        "tag": "Skills",
+        "title": "My Tech Stack"
+    },
+    "exp": {
+        "tag": "Experience",
+        "title": "Development Career",
+        "current": "Current Role",
+        "role": "Backend Developer",
+        "now": "Present",
+        "desc": "Currently developing <strong>OrderApps SAS</strong>, an order management system application used to manage ordering processes and inventory lists, which will evolve into an ERP system for the company. Includes various features:",
+        "feature": {
+            "1": "Develop backend using PHP & Database management with MySQL",
+            "2": "Frontend integration with HTML, CSS, JavaScript",
+            "3": "CRUD features (Create, Read, Update, Delete), Approver, Generate PO, Generate PDF",
+            "4": "Application performance optimization"
+        }
+    },
+    "projects": {
+        "tag": "Portfolio",
+        "title": "Current Project",
+        "intro": "As a developer who just started my career in 2025, I focus on developing <strong>OrderApps SAS</strong>. This project is my first experience in developing an enterprise-level application.",
+        "status": "In Development",
+        "coming": "Coming Soon",
+        "type": "Enterprise Application",
+        "desc": "Order management system application for PT. Sinergi Anugrah Services. A system application used to manage ordering processes and inventory lists, which will evolve into an ERP system for the company.",
+        "developing": "Currently Developing"
+    },
+    "contact": {
+        "tag": "Contact",
+        "title": "Let's Collaborate",
+        "email": "Email",
+        "location": "Location",
+        "country": "Indonesia",
+        "education": "Education",
+        "major": "Information Technology"
+    },
+    "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send Message"
+    },
+    "footer": {
+        "made": "Made with",
+        "coffee": "and lots of coffee"
+    }
+}
