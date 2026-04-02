@@ -5,6 +5,7 @@
         "skills": "Skills",
         "experience": "Experience",
         "projects": "Projects",
+        "gallery": "Gallery",
         "contact": "Contact"
     },
     "hero": {
@@ -28,9 +29,9 @@
         "p1": "I am a graduate of <strong>Information Technology from President University</strong> (Batch 2021-2024) who started my career as a developer in 2025. Although new to the industry, I have a strong determination to keep learning and growing.",
         "p2": "Currently, I am developing <strong>OrderApps SAS</strong> at <strong>PT. Sinergi Anugrah Services</strong>, an order management system application that is challenging and provides valuable experience in enterprise software development.",
         "timeline": {
-            "1": { "title": "Started College", "desc": "Began studies at President University, Batch 2021" },
-            "2": { "title": "Graduated", "desc": "Completed Information Technology degree" },
-            "3": { "title": "Start Development", "desc": "Started career as developer" }
+            "1": { "title": "Started College", "desc": "Began studies at President University, Batch 2021. The scholarship I received made me enthusiastic and full of hope in starting my studies." },
+            "2": { "title": "Graduated", "desc": "I spent three years studying programming, IoT, and game development. I've worked on several web-app projects, created IoT modules, and even completed my thesis capstone. I've completed my Information Technology degree" },
+            "3": { "title": "Start Development", "desc": "The first offer from a startup founded in 2021, emphasized that company development must also be supported by easy and efficient management. I had the opportunity to simplify manual workflows and launch my career as a developer." }
         }
     },
     "skills": {
@@ -79,5 +80,17 @@
     "footer": {
         "made": "Made with",
         "coffee": "and lots of coffee"
+    },
+    "gallery": {
+    "tag": "Gallery",
+    "title": "Moments & Stories",
+    "intro": "Some precious moments that illustrate my journey and passion in everyday life.",
+    "caption": {
+        "1": "Balikpapan City Airport",
+        "2": "Graduation Photo by the Lake",
+        "3": "Winter in the Land of the Rising Sun",
+        "4": "Welcome to Bali",
+        "5": "Garuda Wisnu Kencana"
     }
+}
 }

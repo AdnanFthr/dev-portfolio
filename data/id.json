@@ -5,6 +5,7 @@
         "skills": "Keahlian",
         "experience": "Pengalaman",
         "projects": "Proyek",
+        "gallery": "Galeri",
         "contact": "Kontak"
     },
     "hero": {
@@ -28,9 +29,9 @@
         "p1": "Saya adalah lulusan <strong>Teknik Informatika dari President University</strong> (Batch 2021-2024) yang memulai karir sebagai developer pada tahun 2025. Meskipun masih baru di industri, saya memiliki tekad kuat untuk terus belajar dan berkembang.",
         "p2": "Saat ini saya sedang mengembangkan <strong>OrderApps SAS</strong> di <strong>PT. Sinergi Anugrah Services</strong>, sebuah aplikasi order management system yang menantang dan memberikan pengalaman berharga dalam pengembangan software enterprise.",
         "timeline": {
-            "1": { "title": "Mulai Kuliah", "desc": "Memulai studi di President University, Batch 2021" },
-            "2": { "title": "Lulus", "desc": "Menyelesaikan studi Teknik Informatika" },
-            "3": { "title": "Start Development", "desc": "Memulai karir sebagai developer" }
+            "1": { "title": "Mulai Kuliah", "desc": "Memulai studi di President University, Batch 2021. Dengan adanya beasiswa yang diterima membuat saya bersemangat dan penuh harapan dalam memulai studi" },
+            "2": { "title": "Lulus", "desc": "Menempuh 3 tahun dalam mempelajari programming, IOT, dan game development. Beberapa proyek Web-apps, pembuatan modul IOT, hingga menyelesaikan capstone untuk skripsi. Saya telah menyelesaikan studi Teknik Informatika" },
+            "3": { "title": "Start Development", "desc": "Tawaran pertama dari sebuah startup yang didirakn 2021, berbincang bahwa pengembangan perusahaan juga harus didukung dengan management yang mudah dan efisien. Saya mendapat kesempatan untuk membuat alur kerja yang manual menjadi lebih mudah dan memulai karir sebagai developer" }
         }
     },
     "skills": {
@@ -79,5 +80,17 @@
     "footer": {
         "made": "Dibuat dengan",
         "coffee": "dan banyak kopi"
+    },
+    "gallery": {
+    "tag": "Galeri",
+    "title": "Momen & Cerita",
+    "intro": "Beberapa momen berharga yang menggambarkan perjalanan dan passion saya dalam kehidupan sehari-hari.",
+    "caption": {
+        "1": "Bandara Kota Balikpapan",
+        "2": "Foto Kelulusan di Danau",
+        "3": "Musim Dingin di Negeri Sakura",
+        "4": "Selamat Datang di Bali",
+        "5": "Garuda Wisnu Kencana"
     }
+}
 }
