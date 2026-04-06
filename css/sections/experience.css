@@ -1,0 +1,104 @@
+/* ============================================
+   EXPERIENCE SECTION
+   ============================================ */
+.experience {
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.experience .section-divider {
+    background: linear-gradient(90deg, transparent 0%, var(--vibrant-red) 50%, transparent 100%);
+}
+
+.experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.current-role {
+    background: var(--cyber-panel);
+    border: 1px solid var(--cyber-border);
+    border-radius: 20px;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 20px 60px rgba(0,0,0,0.4),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+}
+
+.current-role::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--gradient-warm);
+    box-shadow: 0 0 20px rgba(252, 191, 73, 0.5);
+}
+
+.role-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 240, 255, 0.1);
+    color: var(--cyber-neon);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.current-role h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.company {
+    color: var(--golden);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    text-shadow: 0 0 10px rgba(252, 191, 73, 0.3);
+}
+
+.period {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-mono);
+}
+
+.role-description p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.role-description ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.role-description li {
+    color: var(--text-secondary);
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.role-description li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--cyber-neon);
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}

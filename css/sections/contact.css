@@ -1,0 +1,172 @@
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+.contact {
+    background: var(--deep-navy);
+    color: var(--text-light);
+    position: relative;
+}
+
+.contact .section-divider {
+    background: linear-gradient(90deg, transparent 0%, var(--cyber-neon) 50%, transparent 100%);
+    opacity: 0.5;
+}
+
+.contact .section-title,
+.contact .section-tag {
+    color: var(--text-light);
+}
+
+.contact .section-tag {
+    background: rgba(0, 240, 255, 0.1);
+    color: var(--cyber-neon);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--cyber-panel);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cyber-neon);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    border: 1px solid var(--cyber-border);
+    box-shadow: 
+        0 0 20px rgba(0, 240, 255, 0.1),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+    transition: var(--transition-normal);
+}
+
+.contact-item:hover .contact-icon {
+    border-color: var(--cyber-neon);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+.contact-detail h4 {
+    color: var(--cyber-neon);
+    margin-bottom: 0.25rem;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.contact-detail p,
+.contact-detail a {
+    color: var(--text-light);
+    word-break: break-word;
+}
+
+.contact-detail small {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Contact Form */
+.contact-form {
+    background: var(--cyber-panel);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--cyber-border);
+    backdrop-filter: blur(20px);
+    box-shadow: 
+        0 20px 60px rgba(0,0,0,0.4),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--cyber-border);
+    border-radius: 12px;
+    color: var(--text-light);
+    font-size: 1rem;
+    transition: var(--transition-normal);
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--cyber-neon);
+    background: rgba(0, 240, 255, 0.05);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+}
+
+.form-group label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: var(--text-muted);
+    transition: var(--transition-normal);
+    pointer-events: none;
+    background: transparent;
+    padding: 0 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -0.6rem;
+    left: 0.8rem;
+    font-size: 0.75rem;
+    color: var(--cyber-neon);
+    background: var(--deep-navy);
+    padding: 0 0.5rem;
+}
+
+.contact .btn-primary {
+    background: var(--gradient-warm);
+    color: var(--midnight);
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 0 20px rgba(252, 191, 73, 0.3);
+}
+
+.contact .btn-primary:hover {
+    box-shadow: 
+        0 10px 30px rgba(252, 191, 73, 0.4),
+        0 0 40px rgba(252, 191, 73, 0.3);
+    transform: translateY(-3px);
+}

@@ -1,0 +1,78 @@
+/* ============================================
+   SKILLS SECTION
+   ============================================ */
+.skills {
+    background: var(--bg-primary);
+    position: relative;
+}
+
+.skills .section-divider {
+    background: linear-gradient(90deg, transparent 0%, var(--golden) 50%, transparent 100%);
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-title {
+    font-size: 1.25rem;
+    color: var(--cyber-neon);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 600;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.category-title i {
+    color: var(--golden);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.skill-item i {
+    font-size: 2.5rem;
+    color: var(--cyber-text-dim);
+    transition: 0.3s ease;
+}
+
+.skill-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+.skill-item:hover i {
+    color: var(--cyber-neon);
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+}
+
+.skill-item:hover span {
+    color: var(--text-light);
+    font-weight: 600;
+}
