@@ -1,5 +1,5 @@
 /* ============================================
-   REUSABLE COMPONENTS
+   REUSABLE COMPONENTS - MOBILE FIX
    ============================================ */
 
 /* Buttons */
@@ -21,6 +21,8 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     white-space: nowrap;
+    min-height: 44px;
+    box-sizing: border-box;
 }
 
 .btn::before {
@@ -46,7 +48,7 @@
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 
         0 10px 30px rgba(0, 36, 85, 0.5),
         0 0 30px rgba(0, 240, 255, 0.2);
@@ -62,7 +64,7 @@
 
 .btn-secondary:hover {
     background: rgba(252, 191, 73, 0.1);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     box-shadow: 
         0 10px 30px rgba(252, 191, 73, 0.2),
         0 0 20px rgba(252, 191, 73, 0.3);
@@ -87,12 +89,13 @@
     border: 1px solid var(--cyber-border);
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
+    flex-shrink: 0;
 }
 
 .social-link:hover {
     background: rgba(252, 191, 73, 0.1);
     color: var(--golden);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     border-color: var(--golden);
     box-shadow: 
         0 10px 30px rgba(0,0,0,0.3),
@@ -143,7 +146,7 @@
 }
 
 .modern-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     border-color: var(--cyber-neon);
     background: rgba(0, 240, 255, 0.05);
     box-shadow: 
@@ -159,7 +162,7 @@
     left: 100%;
 }
 
-/* Code Window Component */
+/* Code Window Component - Desktop */
 .code-window {
     background: rgba(5, 7, 20, 0.8);
     border-radius: 12px;
@@ -199,6 +202,7 @@
     height: 12px;
     border-radius: 50%;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+    flex-shrink: 0;
 }
 
 .dot.red { background: var(--vibrant-red); }
@@ -210,6 +214,9 @@
     color: var(--text-muted);
     font-size: 0.85rem;
     font-family: var(--font-mono);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .window-body {
@@ -264,6 +271,7 @@
     transition: var(--transition-normal);
     position: relative;
     overflow: hidden;
+    min-height: 36px;
 }
 
 .lang-btn::before {
@@ -312,6 +320,7 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     backdrop-filter: blur(10px);
     z-index: 999;
+    cursor: pointer;
 }
 
 .back-to-top.visible {
@@ -327,4 +336,227 @@
     box-shadow: 
         0 15px 40px rgba(0,0,0,0.4),
         0 0 30px rgba(252, 191, 73, 0.3);
+}
+
+/* ============================================
+   MOBILE BREAKPOINTS
+   ============================================ */
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.8rem;
+        min-height: 44px;
+    }
+
+    .social-link {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .modern-card {
+        padding: 1.25rem;
+    }
+
+    /* Code Window Mobile Override */
+    .code-window {
+        max-width: 100%;
+        transform: none;
+        border-radius: 10px;
+    }
+
+    .window-header {
+        padding: 0.625rem 0.875rem;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .window-title {
+        font-size: 0.75rem;
+        max-width: 120px;
+    }
+
+    .window-body {
+        padding: 1rem;
+        font-size: 0.75rem;
+        line-height: 1.6;
+    }
+
+    .window-body pre {
+        font-size: 0.75rem;
+    }
+
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 0.7rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 0.95rem;
+    }
+
+    .modern-card {
+        padding: 1rem;
+    }
+
+    /* Code Window Small */
+    .code-window {
+        border-radius: 8px;
+    }
+
+    .window-header {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .window-title {
+        font-size: 0.7rem;
+        max-width: 100px;
+    }
+
+    .window-body {
+        padding: 0.875rem;
+        font-size: 0.7rem;
+        line-height: 1.55;
+    }
+
+    .window-body pre {
+        font-size: 0.7rem;
+    }
+
+    .lang-switcher {
+        padding: 0.2rem;
+    }
+
+    .lang-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
+        min-height: 32px;
+    }
+
+    .back-to-top {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .btn {
+        padding: 0.65rem 0.875rem;
+        font-size: 0.7rem;
+    }
+
+    .social-link {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    /* Code Window Extra Small */
+    .window-header {
+        padding: 0.5rem 0.625rem;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .window-title {
+        font-size: 0.65rem;
+        max-width: 80px;
+    }
+
+    .window-body {
+        padding: 0.75rem;
+        font-size: 0.65rem;
+        line-height: 1.5;
+    }
+
+    .window-body pre {
+        font-size: 0.65rem;
+    }
+
+    .lang-switcher {
+        padding: 0.15rem;
+    }
+
+    .lang-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.7rem;
+        min-height: 28px;
+    }
+}
+
+@media (max-width: 320px) {
+    .btn {
+        padding: 0.6rem 0.75rem;
+        font-size: 0.65rem;
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+
+    .modern-card {
+        padding: 0.875rem;
+    }
+
+    /* Code Window Tiny */
+    .window-header {
+        padding: 0.4rem 0.5rem;
+    }
+
+    .window-title {
+        font-size: 0.6rem;
+        max-width: 70px;
+    }
+
+    .window-body {
+        padding: 0.625rem;
+        font-size: 0.6rem;
+        line-height: 1.45;
+    }
+
+    .window-body pre {
+        font-size: 0.6rem;
+    }
+
+    .lang-switcher {
+        padding: 0.1rem;
+    }
+
+    .lang-btn {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.65rem;
+        min-height: 26px;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
 }
